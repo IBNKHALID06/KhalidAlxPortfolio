@@ -12,7 +12,7 @@ import EduAccess from "./pages/EduAccess";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/KhalidAlxPortfolio">
       <div className="min-h-screen bg-[#0b0f19] text-white font-sans flex flex-col">
         <Navbar />
         <main className="flex-grow">
