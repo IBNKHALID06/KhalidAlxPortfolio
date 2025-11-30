@@ -26,6 +26,7 @@ function App() {
             <Route path="/education" element={<Education />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/eduaccess" element={<EduAccess />} />
+            <Route path="*" element={<Navigate to="/about" replace />} />
           </Routes>
         </main>
         <Footer />
