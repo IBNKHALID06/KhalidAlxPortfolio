@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import About from "./pages/About";
@@ -12,7 +12,7 @@ import EduAccess from "./pages/EduAccess";
 
 function App() {
   return (
-    <Router basename="/KhalidAlxPortfolio">
+    <Router>
       <div className="min-h-screen bg-[#0b0f19] text-white font-sans flex flex-col">
         <Navbar />
         <main className="flex-grow">
