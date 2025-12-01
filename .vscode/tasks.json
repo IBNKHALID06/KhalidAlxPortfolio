@@ -1,0 +1,19 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build and Deploy to gh-pages",
+			"type": "shell",
+			"command": "npm run build && npx gh-pages -d dist",
+			"isBackground": false,
+			"group": "build"
+		},
+		{
+			"label": "Create gh-pages branch",
+			"type": "shell",
+			"command": "git checkout --orphan gh-pages && git rm -rf . && xcopy /E /I ..\\dist\\* . && git add . && git commit -m \"Deploy to gh-pages\" && git push origin gh-pages && git checkout main",
+			"isBackground": false,
+			"group": "deploy"
+		}
+	]
+}
